@@ -2,7 +2,7 @@
 
 ## 文件目录
 .
-├── <span color=red>bin</span>
+├── <font color=red>bin</font>
 ├── certificates
 ├── conf
 ├── data
