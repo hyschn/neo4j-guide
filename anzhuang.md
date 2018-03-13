@@ -1,9 +1,9 @@
 # 介绍
-* ## 下载 
+## 下载 
     https://neo4j.com/download/
-* ## 文档 
+## 文档 
     https://neo4j.com/docs/
-* ## 安装
+## 安装
 (安装方式有很多种，这里仅介绍其一)
     解压
 ```
@@ -20,7 +20,7 @@ password:neo4j
 dbms.connectors![.default_listen_address=0.0.0.0(去掉注释)
 ```
 
-* ## 优势
+## 优势
     * 自带一套易于学习的查询语言（名为Cypher）
     * 不使用schema，因此可以满足你的任何形式的需求
     * 与关系型数据库相比，对于高度关联的数据（图形数据）的查询快速要快上许多
