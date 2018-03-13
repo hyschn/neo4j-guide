@@ -1,9 +1,10 @@
-# neo4j-guide
+# 介绍
 * ## 下载 
     https://neo4j.com/download/
 * ## 文档 
     https://neo4j.com/docs/
 * ## 安装
+(安装方式有很多种，这里仅介绍其一)
     解压
 ```
 cd /neo4j-community-3.2.2/bin
