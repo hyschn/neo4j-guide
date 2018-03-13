@@ -18,7 +18,8 @@
 └── UPGRADE.txt
 
 ### 日志文件
-\<neo4j-home\>/logs
+\< neo4j-home\>/logs
+
 |文件| 描述|
 |- | :-: |
 |neo4j.log | 最主要的日志，记录Neo4j的主要信息|
