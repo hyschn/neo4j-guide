@@ -47,7 +47,7 @@
 
 ### 存储 label 的文件
    * 存储label token数据及其序列Id
-   neostore.labeltokenstore.db  存储lable token 数组数据
+   neostore.labeltokenstore.db  存储lable token 数组数据  
    neostore.labeltokenstore.db.id
    * 存储label token名字数据及其序列Id
    neostore.labeltokenstore.db.names  存储 label token 的 names 数据
