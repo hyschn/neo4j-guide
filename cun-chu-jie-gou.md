@@ -21,35 +21,35 @@
   Neo4j的数据文件存放在$NEO4J_HOME/data/databases/graph.db下面
 
 ### 存储 node 的文件
-   * 存储节点数据及其序列Id    
+   * 存储节点数据及其序列Id      
    neostore.nodestore.db:  存储节点数组，数组的下标即是该节点的ID
    neostore.nodestore.db.id  ：存储最大的ID 及已经free的ID
-   * 存储节点label及其序列Id
-   neostore.nodestore.db.labels  ：存储节点label数组数据，数组的下标即是该节点label的ID
+   * 存储节点label及其序列Id  
+   neostore.nodestore.db.labels  ：存储节点label数组数据，数组的下标即是该节点label的ID  
    neostore.nodestore.db.labels.id
 
 ### 存储 relationship 的文件
-   * 存储关系数据及其序列Id
+   * 存储关系数据及其序列Id    
    neostore.relationshipstore.db 存储关系 record 数组数据
    neostore.relationshipstore.db.id
    
-   * 存储关系组数据及其序列Id
+   * 存储关系组数据及其序列Id  
    neostore.relationshipgroupstore.db  存储关系 group数组数据
    neostore.relationshipgroupstore.db.id
    
-   * 存储关系类型及其序列Id
+   * 存储关系类型及其序列Id  
    neostore.relationshiptypestore.db  存储关系类型数组数据
    neostore.relationshiptypestore.db.id
    
-   * 存储关系类型的名称及其序列Id
+   * 存储关系类型的名称及其序列Id  
    neostore.relationshiptypestore.db.names存储关系类型 token 数组数据
    neostore.relationshiptypestore.db.names.id
 
 ### 存储 label 的文件
-   * 存储label token数据及其序列Id
+   * 存储label token数据及其序列Id  
    neostore.labeltokenstore.db  存储lable token 数组数据  
    neostore.labeltokenstore.db.id
-   * 存储label token名字数据及其序列Id
+   * 存储label token名字数据及其序列Id  
    neostore.labeltokenstore.db.names  存储 label token 的 names 数据
    neostore.labeltokenstore.db.names.id
 
