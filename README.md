@@ -2,7 +2,9 @@ neo4j guide
 ==========================    
 ##1.图数据库简介 
 * ### What is a Graph Database
-图数据库的实现和应用都是基于图模型，但是学习图数据库并不需要理解复杂的[图论](https://en.wikipedia.org/wiki/Graph_theory) 知识。相较于关系型数据库，
+图数据库的实现和应用都是基于图模型，但是学习图数据库并不需要理解复杂的[图论](https://en.wikipedia.org/wiki/Graph_theory) 知识。相较于关系型数据库(RDBMS),图的模型理解起来更加直观。
+
+简单来说，一个图有两种元素组成：点和边.一个点代表一个实体()
 
 ## 1.neo4j的地位
 
