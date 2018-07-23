@@ -1,10 +1,19 @@
 neo4j guide
 ==========================    
 ##1.图数据库简介 
-* ### <span color=red>What</span> is a Graph Database
+* ### <span color=red>What</span> Is a Graph Database
 
 图数据库的实现和应用都是基于图模型,但是学习图数据库并不需要理解复杂的[图论](https://en.wikipedia.org/wiki/Graph_theory) 知识.相较于关系型数据库(RDBMS),图的模型理解起来更加直观.   
+
 简单来说，一个图有两种元素组成:点(node)和边(relationship).一个点代表一个实体(例如在我们的无限漫画项目,node可以是一个topic、comic、comic_image或tag).边代表两个表之间的联系(例如comic表中的topic_id，comic_image表中的comic_id或者topic_tag表).
+
+* ### <span color=red>Why</span> You Should Care about Graph Databases
+
+* ####充分性
+ [关系型数据库](https://en.wikipedia.org/wiki/Relational_database_management_system)最初被设计出来是为了处理表格形式的扁平数据，而且它们([MySQL](https://en.wikipedia.org/wiki/MySQL),[Oracle](https://en.wikipedia.org/wiki/Oracle),[Microsoft SQL Server](https://en.wikipedia.org/wiki/Microsoft_SQL_Server)……)目前在这方面的表现依然非常出色.尴尬的是，***关系***型数据库却不擅长处理数据之间的***“关系”***，特别是当这种关系是一种“多对多”的关系的时候(通常的做法是建立一个额外的关联表).而*relationship*作为图数据中的第一要素,恰恰解决了这一痛点.
+* ####必要性
+我们正处于一个“大数据”时代，而且我们的数据量一定会持续增长，但是和数据本身相比，数据之间的关联关系增长的要更快。
+
 
 ## 1.neo4j的地位
 
