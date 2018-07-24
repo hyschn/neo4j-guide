@@ -20,7 +20,7 @@ return comicImage;
 而且，两者查询消耗的时间差距也很明显。
 
 |mysql| neo4j|
-|-|-|
+|- | :-: |
 |![](/assets/20180724171744.png) | ![](/assets/20180724171537.png)|
 
 
