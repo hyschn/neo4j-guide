@@ -17,6 +17,14 @@ where topic.title='生存日';
 match (topic:Topic{title:"生存日"})-[:Contains]->(comic:Comic)-[:Contains]->(comicImage:ComicImage) 
 return comicImage;
 ```
-而且，两者查询消耗的时间差距也很明显
-![](/assets/20180724171744.png)
-![](/assets/20180724171537.png)
+而且，两者查询消耗的时间差距也很明显。
+
+|mysql| neo4j|
+|-|-|
+|![](/assets/20180724171744.png) | ![](/assets/20180724171537.png)|
+
+
+
+  
+
+
