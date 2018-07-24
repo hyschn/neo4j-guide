@@ -24,6 +24,15 @@ return comicImage;
 |![](/assets/20180724171744.png) | ![](/assets/20180724171537.png)|
 
 ## 2.基本语法
+### MATCH
+match是最常用的一个子句。
+Cypher用一对小括号来构造一个“点”，下面这些写法都是正确的
+
+```sql
+(topic:Topic{title:"生存日"})
+(:Topic)
+(topic)
+```
 
 
 
