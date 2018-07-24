@@ -78,8 +78,15 @@ return制定匹配的模式中，那些表达式，点，边或属性需要被�
 链接前一个查询的结果和后一个查询，类似于Unix中的管道。例如我们在统计“至少一个章节只有一张图片的作品”的时候，可以这样查询：
 
 ```sql
-match (topic:Topic)-[:Contains]->(comic:Comic)-[:Contains]->(comicImage:ComicImage) where topic.used_source=comicImage.topic_source and topic.used_source=1 with count(distinct comic) as comicCount, count(distinct comicImage) as imageCount,topic as topic,comic as comic where comicCount>=imageCount return distinct topic.title,count(comic.id),comicCount,imageCount order by topic.title asc
+match (topic:Topic)-[:Contains]->(comic:Comic)-[:Contains]->(comicImage:ComicImage)
+where topic.used_source=comicImage.topic_source and topic.used_source=1 
+with count(distinct comic) as comicCount, count(distinct comicImage) as imageCount,topic as topic,comic as comic
+where comicCount>=imageCount 
+return distinct topic.title,count(comic.id),comicCount,imageCount 
+order by topic.title asc
 ```
+
+上面这个查询和使用SQL来查并没有什么优化的地方，因为Cypher没有*having*和*group by*，所以在分组统计的时候会比较麻烦。
 
   
 
