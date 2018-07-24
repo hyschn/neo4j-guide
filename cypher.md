@@ -14,5 +14,6 @@ where topic.title='生存日';
 ```
 但是在Neo4j中，只需要这样
 ```sql
-match (topic:Topic{title:"生存日"})-[:Contains]->(comic:Comic)-[:Contains]->(comicImage:ComicImage) return comicImage;
+match (topic:Topic{title:"生存日"})-[:Contains]->(comic:Comic)-[:Contains]->(comicImage:ComicImage) 
+return comicImage;
 ```
