@@ -24,7 +24,7 @@ return comicImage;
 |![](/assets/20180724171744.png) | ![](/assets/20180724171537.png)|
 
 ## 2.基本语法
-### MATCH
+#### MATCH
 match是最常用的一个子句。
 Cypher用一对小括号("(",")")来构造“点”，下面这些写法都是正确的
 
@@ -47,8 +47,22 @@ Cypher用一对小括号("(",")")来构造“点”，下面这些写法都是�
 (topic:Topic{title:"生存日",used_source:2})
 ```
 
-RETUEN
+#### RETUEN
+return制定匹配的模式中，那些表达式，点，边或属性需要被返回，在上面的例子中，我们return的是comicImage点的信息，当然也可以return  comicImage.url,count(comicImage.id)……
 
+#### WHERE
+后面跟用来过滤模式匹配的条件。
+
+#### CREATE
+用来创建点或边
+
+#### MERGE
+根据match提供的模式，如果库中存在的点或边则直接使用，不存在则创建，最终需要满足模式
+
+#### DELETE/REMOVE
+删除点、边、属性
+
+#### SET
 
 
   
