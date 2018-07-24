@@ -7,6 +7,12 @@ Neo4j使用一种名为[Cypher](https://neo4j.com/developer/cypher/?ref=beginner
 ```sql
 select comic_image.id,comic_image.app_id,comic_image.comic_id,comic_image.created_at,comic_image.height,
 comic_image.`order`,comic_image.source_image,comic_image.topic_source,comic_image.updated_at,
-comic_image.url,comic_image.width from topic join comic on topic.id=comic.topic_id join comic_image on
-comic.id=comic_image.comic_id where topic.title='生存日';
+comic_image.url,comic_image.width from topic 
+join comic on topic.id=comic.topic_id 
+join comic_image on comic.id=comic_image.comic_id 
+where topic.title='生存日';
+```
+但是在Neo4j中，只需要这样
+```sql
+match (topic:Topic{title:"生存日"})-[:Contains]->(comic:Comic)-[:Contains]->(comicImage:ComicImage) return comicImage;
 ```
