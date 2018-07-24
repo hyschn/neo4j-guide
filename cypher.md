@@ -86,7 +86,7 @@ return distinct topic.title,count(comic.id),comicCount,imageCount
 order by topic.title asc
 ```
 
-上面这个查询和使用SQL来查并没有什么优化的地方，因为Cypher没有*having*和*group by*，所以在分组统计的时候会比较麻烦。
+上面这个查询和使用SQL来查并没有什么优化的地方，因为Cypher没有*having*和*group by*，所以在分组统计的时候会比较麻烦。在cypher中不用显式的写group by分组字段，由解释器自动决定：即未加聚合函数的字段自动决定为分组字段.例如在查询topic的时候想根据来源统计，可以return topic.used_source,count(id)
 
   
 
