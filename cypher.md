@@ -63,7 +63,23 @@ return制定匹配的模式中，那些表达式，点，边或属性需要被�
 删除点、边、属性
 
 #### SET
+给点或边设置属性值或标签
 
+#### ORDER BY
+对return的结果进行排序
+
+#### SKIP LIMIT
+返回结果时跳过前面一定行数以及限制返回的总行数
+
+#### UNION
+合并多个查询的结果
+
+#### WITH
+链接前一个查询的结果和后一个查询，类似于Unix中的管道。例如我们在统计“至少一个章节只有一张图片的作品”的时候，可以这样查询：
+
+```sql
+match (topic:Topic)-[:Contains]->(comic:Comic)-[:Contains]->(comicImage:ComicImage) where topic.used_source=comicImage.topic_source and topic.used_source=1 with count(distinct comic) as comicCount, count(distinct comicImage) as imageCount,topic as topic,comic as comic where comicCount>=imageCount return distinct topic.title,count(comic.id),comicCount,imageCount order by topic.title asc
+```
 
   
 
