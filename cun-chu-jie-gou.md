@@ -32,6 +32,7 @@ Neo4j的数据文件存放在$NEO4J\_HOME/data/databases/graph.db下面
 * 存储节点数据及其序列Id      
   neostore.nodestore.db:  存储节点数组，数组的下标即是该节点的ID  
   neostore.nodestore.db.id  ：存储最大的ID 及已经free的ID
+  
 * 存储节点label及其序列Id  
   neostore.nodestore.db.labels  ：存储节点label数组数据，数组的下标即是该节点label的ID  
   neostore.nodestore.db.labels.id
