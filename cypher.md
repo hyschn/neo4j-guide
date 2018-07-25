@@ -19,9 +19,10 @@ return comicImage;
 ```
 而且，两者查询消耗的时间差距也很明显。
 
-|SQL|Cypher|
+|SQL|![](/assets/20180724171744.png) |
 |- | :-: |
-|![](/assets/20180724171744.png) | ![](/assets/20180724171537.png)|
+|Cypher|![](/assets/20180724171537.png)|
+
 
 ## 2.基本语法
 #### MATCH
