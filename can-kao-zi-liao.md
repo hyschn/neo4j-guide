@@ -10,3 +10,10 @@
     * [O’Reilly’s Graph Databases](https://neo4j.com/graph-databases-book/)
     * [Graph Databases for Beginners](https://neo4j.com/whitepapers/graph-databases-beginners-ebook/)
     * [Neo4j in Action](https://www.manning.com/books/neo4j-in-action)
+    
+* 中文社区
+http://neo4j.com.cn
+人少资源差，不推荐
+
+* GitHub Repo
+https://github.com/neo4j/neo4j
