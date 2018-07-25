@@ -9,4 +9,4 @@
 
     * [O’Reilly’s Graph Databases](https://neo4j.com/graph-databases-book/)
     * [Graph Databases for Beginners](https://neo4j.com/whitepapers/graph-databases-beginners-ebook/)
-    [Neo4j in Action](https://www.manning.com/books/neo4j-in-action)
+    * [Neo4j in Action](https://www.manning.com/books/neo4j-in-action)
