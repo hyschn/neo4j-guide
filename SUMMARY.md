@@ -6,5 +6,5 @@
 * [配置](pei-zhi.md)
 * [Cypher](cypher.md)
 * [应用场景](shi-yong-an-li.md)
-* [参考资料](can-kao-zi-liao.md)
+* [学习资源](can-kao-zi-liao.md)
 
