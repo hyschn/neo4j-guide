@@ -15,5 +15,5 @@
 http://neo4j.com.cn
 人少资源差，不推荐
 
-* GitHub Repo
+* GitHub Code Repo
 https://github.com/neo4j/neo4j
