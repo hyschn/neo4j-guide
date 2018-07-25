@@ -2,8 +2,7 @@
 ======================================
 
 ## 1.反欺诈
-
-![](/assets/20180725101809.png)
+![](https://raw.githubusercontent.com/hyschn/picturesForMarkDown/master/20180725101809.png)
 ## 2.实时推荐系统
 
 ## 3.主数据管理
