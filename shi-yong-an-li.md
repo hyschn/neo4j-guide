@@ -17,6 +17,8 @@
 
 ![](/assets/20180725105030.png)
 ## 3.主数据管理
+[主数据](https://en.wikipedia.org/wiki/Master_data)是一个企业的命脉，通常包含以下数据：
+
 ![](/assets/20180725152753.png)
 ![](/assets/20180725152804.png)
 ## 4.网络运维
